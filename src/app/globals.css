@@ -4,30 +4,58 @@
 
 :root {
   --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+  --background-start-rgb: 242, 242, 242;
+  --background-end-rgb: 242, 242, 242;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
     --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+    --background-start-rgb: 242, 242, 242;
+    --background-end-rgb: 242, 242, 242;
   }
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
+  padding: 0;
+  margin: 0;
+  color: rgb(var(--foreground-rgb)) !important;
   background: linear-gradient(
-      to bottom,
-      transparent,
+      to right,
+      rgb(238, 225, 225) ,
+      rgba(217, 244, 225, 0.5)
+    ),
+    linear-gradient(
+      to right,
+      rgb(206, 231, 244) ,
+      rgba(158, 177, 61, 0.5)
+    )
+   ;
+   background-position: top, bottom;
+    /* linear-gradient(
+      to right,
+      rgb(var(--background-start-rgb)),
       rgb(var(--background-end-rgb))
     )
-    rgb(var(--background-start-rgb));
+    rgb(var(--background-start-rgb)); */
+
+
 }
 
-@layer utilities {
+/* @layer utilities {
   .text-balance {
     text-wrap: balance;
   }
+} */
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: white
+}
+.App{
+  width: 100%;
+
 }
